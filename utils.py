@@ -5,7 +5,6 @@ import glob
 import numpy as np
 
 
-
 def load_model():
     json_file = open('model.json', 'r')
     loaded_model_json = json_file.read()
@@ -29,7 +28,6 @@ def extract_features_song(src):
 
 
 def get_genre(fname):
-
     genres = ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
     model  = load_model()
     features = extract_features_song(fname)
@@ -40,6 +38,6 @@ def get_genre(fname):
         return genres[genre_idx]
 
     except:
-        return "File too short.Not enough features to predict."
+        return "File too short. Not enough features to predict."
 
 
