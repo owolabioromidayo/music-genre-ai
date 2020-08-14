@@ -2,3 +2,5 @@ genres.tar.gz
 *.wav
 genres
 .ipynb_checkpoints
+todo
+__pycache__
